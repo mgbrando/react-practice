@@ -21,7 +21,6 @@ const bootstrapConfig = isProd
 module.exports = {
   entry: {
     app: "./src/app.js",
-    contact: "./src/contact.js",
     bootstrap: bootstrapConfig
   },
   output: {
@@ -72,18 +71,7 @@ module.exports = {
         collapseWhitespace: true
       },*/
       hash: true,
-      excludeChunks: ["contact"],
       template: "./src/index.html"
-    }),
-    new HtmlWebpackPlugin({
-      title: "Contact Page",
-      /*minify: {
-        collapseWhitespace: true
-      },*/
-      hash: true,
-      chunks: ["contact"],
-      filename: "contact.html",
-      template: "./src/contact.html"
     }),
     new ExtractTextPlugin({
       filename: "css/[name].css",
