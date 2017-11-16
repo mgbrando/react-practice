@@ -20,7 +20,7 @@ const bootstrapConfig = isProd
 
 module.exports = {
   entry: {
-    app: "./src/app.js",
+    index: "./src/index.js",
     bootstrap: bootstrapConfig
   },
   output: {
